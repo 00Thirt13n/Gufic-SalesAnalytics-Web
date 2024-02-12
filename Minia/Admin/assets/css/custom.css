@@ -1,0 +1,31 @@
+
+th {
+    color: #495057;
+    font-weight: 400;
+}
+
+.total-badge {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 2;
+}
+
+
+.salesCard {
+    margin-top: 2rem;
+}
+
+.LightBlackColor {
+    color: #495057;
+    font-weight: 500;
+}
+
+.monthly-table,
+.yearly-table {
+    display: block;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}

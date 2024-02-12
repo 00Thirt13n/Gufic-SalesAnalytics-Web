@@ -1,0 +1,1 @@
+<?php include '/var/www/html/gufic/mediapp/AdminWeb/Minia/Admin/layouts/test2.php'?>
