@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['samplename']=$user_id ; // Session Set
         $_SESSION['user_id']=$u_id ; // Session Set
 
-        if($u_id =='MEMP_G_16' || $u_id =='MEMP_G_57' || $u_id =='MEMP_G_89'){
+        if($u_id =='MEMP_G_16'){ // MEMP_G_57(kapil), MEMP_G_89(pranav choksi)
             $_SESSION['user_id']='MEMP_G_1' ; // Session Set
             $_SESSION['is_admin']= true ;
             $_SESSION['admin_id'] = $u_id;

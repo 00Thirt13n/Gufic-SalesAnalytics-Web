@@ -210,7 +210,7 @@
         // Function to set a cookie
         function setCookie(cookieName, cookieValue, expiration) {
             const d = new Date();
-            d.setTime(d.getTime() + (expiration * 1000)); // Set expiration time
+            d.setTime(d.getTime() + (expiration * 180000)); // Set expiration time
             const expires = "expires=" + d.toUTCString(); // Convert the date to UTC string
 
             // Set the cookie with the provided name, value, and expiration date

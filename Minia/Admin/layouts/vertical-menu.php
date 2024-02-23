@@ -279,7 +279,7 @@ if($_SESSION['is_admin'] == true){
 <!-------------------------------- IMS BILLING ADMIN PANEL -------------------------------->
 
 <?php if($_SESSION['is_admin'] == true) : ?>
-                    <li>
+                    <li hidden>
                         <a href="javascript: void(0);" class="has-arrow" >
                             <i data-feather="grid"></i>
                             <span data-key="t-contacts">IMS Billing</span>

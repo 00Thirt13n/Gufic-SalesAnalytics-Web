@@ -161,6 +161,10 @@
                                                 $end_date = date('Y-m-d'); // Default to today's date
                                             }
 
+                                            if (strtotime($start_date) > strtotime($end_date)) {
+                                                $start_date = date('Y-m-d', strtotime('-1 year', strtotime($start_date)));
+                                            }
+
                                             $sql =  "SELECT distinct rod.`ORDER BY`, `HOSPITAL NAME`, HQ,
                                                     sum(rod.`TOTAL PRICE`) total
                                                 FROM MELJOHN_UPLOAD_SATISH.RAW_ORDER_DATA as rod 

@@ -165,6 +165,10 @@
                                                 $end_date = date('Y-m-d'); // Default to today's date
                                             }
 
+                                            if (strtotime($start_date) > strtotime($end_date)) {
+                                                $start_date = date('Y-m-d', strtotime('-1 year', strtotime($start_date)));
+                                            }
+
                                             $sql =  "SELECT distinct dpob.product,
                                                             sum(dpob.`QUANTITY`) quantity, 
                                                             amf.MRP as mrp, 
